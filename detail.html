@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Detail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="text-center mb-7">Detail </h1>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-7">
+                <!-- Container for the TradingView advanced chart widget -->
+                <div id="tradingview-advanced-chart" class="widget-container"></div>
+            </div>
+            <div class="col-md-5">
+                <!-- Container for the TradingView hotlists widget -->
+                <div id="tradingview-hotlists" class="widget-container"></div>
+            </div>
+            <div class="col-md-4">
+                <!-- Container for the TradingView mini symbol overview widget -->
+                <div id="tradingview-mini-symbol-overview" class="widget-container"></div>
+            </div>
+            <div class="col-md-4">
+                <!-- Container for the TradingView mini symbol overview widget -->
+                <div id="tradingview-technical-analysis" class="widget-container"></div>
+            </div>
+            <div class="col-md-4">
+                <!-- Container for the TradingView mini symbol overview widget -->
+                <div id="tradingview-financials" class="widget-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript to dynamically load the widgets -->
+    <script src="detail.js"></script>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

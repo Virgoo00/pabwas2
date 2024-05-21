@@ -1,0 +1,101 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+.coin-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.coin {
+    margin-bottom: 20px;
+    margin: 5px;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    width: calc(100% / 4 - 32px); /* Adjust width based on number of items per row */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.coin img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.coin-info h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.coin-info p {
+    margin: 0;
+    color: #555;
+}
+
+.coin-price {
+    font-weight: bold;
+}
+
+.coin-actions {
+    margin-top: 10px;
+}
+
+.coin-actions button {
+    margin-right: 5px;
+}
+
+.pos {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.pos-total {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.coin.selected {
+    transform: scale(1.05);
+}
+.widget-container {
+    height: 80vh; /* Set ketinggian container */
+    overflow-y: auto; /* Tambahkan overflow jika konten terlalu panjang */
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #ffffff;
+}
+.tradingview-widget-container {
+    height: 100%;
+    width: 100%;
+}
+.widget {
+    height: calc(100% - 32px);
+    width: 100%;
+}
+.blue-text {
+    color: #007bff;
+}
+#tradingview-timeline {
+    width: 100%; /* Menyesuaikan lebar widget dengan lebar sidebar */
+    height: 100vh; /* Tinggi widget setara dengan tinggi viewport */
+}
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
